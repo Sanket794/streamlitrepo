@@ -4,7 +4,7 @@ import requests
 import streamlit as st 
 from streamlit_lottie import st_lottie 
 
-
+st.set_page_config(page_title = "My page",page_icon =":tada:",layout = "wide")
 url = requests.get( 
 	"https://assets2.lottiefiles.com/packages/lf20_mDnmhAgZkb.json") 
 url_json = dict() 
