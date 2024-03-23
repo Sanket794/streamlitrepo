@@ -10,7 +10,7 @@ with st.container():
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
-    with st.container():
+    with left_column:
         for i in range(0,3):
             st.header("Whta I do")
             st.write("##")
