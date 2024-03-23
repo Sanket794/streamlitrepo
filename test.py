@@ -12,7 +12,7 @@ if url.status_code == 200:
 	url_json = url.json() 
 else: 
 	print("Error in URL") 
-#================================================================
+#=================================================================
 
 
 # lot_code = load_lottieurl("animations/aaa1.json")

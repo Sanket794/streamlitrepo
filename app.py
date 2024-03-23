@@ -15,7 +15,7 @@ def load_lottieurl(filepath: str):
     with open(filepath,"r") as f:
         return json.load(f)
 
-#---- LOAD ASSERTS-----
+#---- LOAD ASSERTS---a--
 lot_code = load_lottieurl("animations/aaa1.json")
 
 #------Header-------
