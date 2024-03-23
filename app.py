@@ -14,7 +14,7 @@ else:
 #---- LOAD ASSERTS-----
 lot_code = load_lottieurl("animations/aaa1.json")
 
-#------Header----as---
+#------Header-------
 with st.container():
     st.subheader("Hi i am sanket :wave:")
     st.title("A noraml human")
