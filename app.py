@@ -7,3 +7,4 @@ st.subheader("Hi i am sanket :wave:")
 
 st.title("A noraml human")
 st.write("I am a simple who want to test thid python libaray")
+st.write("I am a simple who want to test thid python libaray")
