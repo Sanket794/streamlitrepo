@@ -19,7 +19,7 @@ def load_lottiefile(filepath):
 # else: 
 # 	print("Error in URL") 
 
-lot_code = load_lottiefile("animations/aaa1.json")
+lot_code = load_lottiefile("animations/aaa2.json")
 
 
 #=================================================================
