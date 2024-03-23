@@ -5,13 +5,23 @@ import streamlit as st
 from streamlit_lottie import st_lottie 
 
 st.set_page_config(page_title = "My page",page_icon =":tada:",layout = "wide")
-url = requests.get( 
-	"https://assets2.lottiefiles.com/packages/lf20_mDnmhAgZkb.json") 
-url_json = dict() 
-if url.status_code == 200: 
-	url_json = url.json() 
-else: 
-	print("Error in URL") 
+
+def load_lottiefile(filepath):
+    with open(filepath,"r") as f:
+        return json.load(f)
+
+
+# url = requests.get( 
+# 	"https://assets2.lottiefiles.com/packages/lf20_mDnmhAgZkb.json") 
+# url_json = dict() 
+# if url.status_code == 200: 
+# 	url_json = url.json() 
+# else: 
+# 	print("Error in URL") 
+
+lot_code = load_lottiefile("animations/aaa1.json")
+
+
 #=================================================================
 
 
@@ -31,7 +41,7 @@ with st.container():
         st.write("""It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).""")
         st.write("[see more](https://github.com/Sanket794/streamlitrepo/blob/main/app.py)")
     with right_column:
-        st_lottie(url_json, 
+        st_lottie(lot_code, 
                   # change the direction of our animation 
                   reverse=True, 
                   # height and width of animation 
