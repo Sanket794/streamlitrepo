@@ -9,7 +9,7 @@ def load_lottieurl(filepath: str):
 #---- LOAD ASSERTS-----
 lot_code = load_lottieurl("animations/aaa1.json")
 
-#------Header------bf-
+#------Header-------
 with st.container():
     st.subheader("Hi i am sanket :wave:")
     st.title("A noraml human")
