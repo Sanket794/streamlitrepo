@@ -1,14 +1,13 @@
+import json
 import requests
 import streamlit as st
 from stream_lottie import st_lottie
 st.set_page_config(page_title = "My page",page_icon =":tada:",layout = "wide")
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+def load_lottieurl(filepath: str):
+    with open(filepath,"r") as f:
+        return json.load(f)
 #---- LOAD ASSERTS-----
-lot_code = load_lottieurl("C:/Users/verma/OneDrive/Documents/GitHub/streamlitrepo/animations")
+lot_code = load_lottieurl("animations/aaa1.json")
 
 #------Header-------
 with st.container():
