@@ -1,7 +1,7 @@
 import json
 import requests
 import streamlit as st
-from stream_lottie import st_lottie
+from streamlit_lottie import st_lottie
 st.set_page_config(page_title = "My page",page_icon =":tada:",layout = "wide")
 def load_lottieurl(filepath: str):
     with open(filepath,"r") as f:
